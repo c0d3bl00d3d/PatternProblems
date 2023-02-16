@@ -115,3 +115,98 @@ int n = 6;
             Console.Write("\n");
         }
     }
+    
+// Problem - 5
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+// Solution :-
+
+> C#
+int n = 5, j_1 = n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<j_1;j++)
+        {
+            Console.Write("* ");
+        }
+        j_1--;
+        Console.Write("\n");
+    }
+
+// Problem - 6
+     *
+    **
+   ***
+  ****
+ *****
+******
+
+// Solution :-
+
+> C#
+int n = 5, j_1 = n, k_1 = 0;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<j_1-1;j++)
+        {
+            Console.Write(" ");
+        }
+        j_1--;
+        for(int k=0;k<=k_1;k++)
+        {
+            Console.Write("*");
+        }
+        k_1++;
+        Console.Write("\n");
+    }
+// Problem - 7
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
+// Solution :-
+
+> C#
+int n = 5, k_1 = n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+            Console.Write(" ");
+        }
+        for(int k=0;k<k_1;k++)
+        {
+            Console.Write("* ");
+        }
+        k_1--;
+        Console.Write("\n");
+    }
+// Problem - 8
+*****
+ ****
+  ***
+   **
+    *
+    
+// Solution :-
+
+> C#
+int n = 5, k_1 = n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+            Console.Write(" ");
+        }
+        for(int k=0;k<=k_1-1;k++)
+        {
+            Console.Write("*");
+        }
+        k_1--;
+        Console.Write("\n");
+    }
