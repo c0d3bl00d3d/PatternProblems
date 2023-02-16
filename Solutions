@@ -1,0 +1,117 @@
+// Problem - 1
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * *
+
+// Solution :-
+
+> C#
+int n = 5;
+      int j_1 = n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<j_1;j++)
+        {
+            Console.Write(" ");
+        }
+        j_1--;
+        for(int k=0;k<=i;k++)
+        {
+            Console.Write("* ");
+        }
+        Console.Write("\n");
+    }
+
+// Problem - 2
+*
+* *
+* * *
+* * * *
+* * * * *
+
+// Solution :- 
+
+> C#
+ int n = 5;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            Console.Write("* ");
+        }
+        Console.Write("\n");
+    }
+    
+// Problem - 3
+           * 
+         * * 
+       * * * 
+     * * * * 
+   * * * * * 
+   
+// Solution :-
+
+> C#
+ int n = 5;
+      int j_1 = n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<j_1;j++)
+        {
+            Console.Write(" ");
+        }
+        j_1--;
+        for(int k=0;k<=i;k++)
+        {
+            Console.Write("*");
+        }
+        Console.Write("\n");
+    }
+    
+// Problem - 4
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+// Solution :-
+
+> C#
+int n = 6;
+      int j_1 = n,j_2=0, y_2 = n+(n-3);
+    for(int i=0;i<n*2-1;i++)
+    {
+        if(i < n)
+        {
+            for(int j=0;j<j_1-1;j++)
+            {
+                Console.Write(" ");
+            }
+            j_1--;
+            for(int k=0;k<i*2+1;k++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n");
+        }
+        else
+        {
+            for(int z=0;z<=j_2;z++)
+            {
+                Console.Write(" ");
+            }
+            j_2++;
+            for(int y=0;y<y_2;y++)
+            {
+                Console.Write("*");
+            }
+            y_2 = y_2 - 2;
+            Console.Write("\n");
+        }
+    }
