@@ -245,3 +245,96 @@ int n = 5, k_1 = n;
             Console.Write("\n");
         }
     }
+
+// Problem - 10
+    *
+   **
+  ***
+ ****
+*****
+ ****
+  ***
+   **
+    *
+
+// Solution :-
+
+> C#
+int n = 5, j_1 = n,p_1 = n-1;
+    for(int i=0;i<n*2-1;i++)
+    {
+        if(i < n)
+        {
+            for(int j=0;j<j_1-1;j++)
+            {
+                Console.Write(" ");
+            }
+            j_1--;
+            for(int k=0;k<=i;k++)
+            {
+                Console.Write('*');
+            }
+            Console.Write("\n");
+        }
+        else
+        {
+            for(int z=0;z<=j_1;z++)
+            {
+                Console.Write(" ");
+            }
+            j_1++;
+            for(int p=0;p<=p_1-1;p++)
+            {
+                Console.Write('*');
+            }
+            p_1--;
+            Console.Write("\n");
+        }
+    }
+
+// Problem - 11
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+
+// Solution :-
+
+> C#
+ int n = 5,k_1 = n,q_1 = 0,p_1 = n;
+    for(int i=0;i<n*2;i++)
+    {
+        if(i < n)
+        {
+            for(int j=0;j<=i-1;j++)
+            {
+                Console.Write(" ");
+            }
+            for(int k=0;k<k_1;k++)
+            {
+                Console.Write("* ");
+            }
+            k_1--;
+            Console.Write("\n");
+        }
+        else
+        {
+            for(int p=0;p<p_1-1;p++)
+            {
+                Console.Write(" ");
+            }
+            p_1--;
+            for(int q=0;q<=q_1;q++)
+            {
+                Console.Write("* ");
+            }
+            q_1++;
+            Console.Write("\n");
+        }
+    }
