@@ -338,3 +338,44 @@ int n = 5, j_1 = n,p_1 = n-1;
             Console.Write("\n");
         }
     }
+
+// Problem - 12
+    *
+   * *
+  *   *
+ *     *
+*********
+
+// Solution :-
+
+> C#
+int n = 5,j_1 = n,K_1 = n;
+    for(int i=1;i<=n;i++)
+    {
+        if(i == n)
+        {
+            for(int z=0;z<n*2-1;z++)
+            {
+                Console.Write('*');
+            }
+            break;
+        }
+        
+        for(int j=0;j<j_1-1;j++)
+        {
+            Console.Write(" ");
+        }
+        j_1--;
+        for(int k=1;k<=i*2-1;k++)
+        {
+            if(k == 1 || k == i*2-1)
+            {
+                Console.Write("*");
+            }
+            else
+            {
+                Console.Write(" ");
+            }
+        }
+        Console.Write("\n");
+    }
